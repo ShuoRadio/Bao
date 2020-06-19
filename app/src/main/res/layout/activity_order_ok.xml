@@ -1,0 +1,316 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:descendantFocusability="beforeDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme">
+            <ImageView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/iv_ok_back"
+                android:layout_marginTop="6dp"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_1"/>
+            <TextView
+                android:layout_alignTop="@id/iv_ok_back"
+                android:layout_toRightOf="@id/iv_ok_back"
+                android:id="@+id/order_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 外卖配送 "
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginBottom="6dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_8"
+            android:background="#FFFFFF"
+            android:layout_below="@+id/RelativeLayout_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_ok_address"
+                android:background="@null"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金陵科技学院北区"
+                android:textSize="14sp"
+                android:textColor="@color/balck"/>
+            <TextView
+                android:id="@+id/tv_ok_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_ok_address"
+                android:text="唐洪斌"
+                android:textSize="9sp"
+                android:layout_alignLeft="@id/et_ok_address"/>
+
+            <TextView
+                android:id="@+id/tv_ok_phone"
+                android:textSize="9sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_ok_uname"
+                android:text="1891818121"
+                android:layout_alignTop="@id/tv_ok_uname"
+                android:layout_marginLeft="20dp"/>
+
+            <View
+                android:id="@+id/view_ok_1"
+                android:layout_width="wrap_content"
+                android:layout_height="0.8dp"
+                android:layout_below="@id/tv_ok_uname"
+                android:layout_alignLeft="@id/et_ok_address"
+                android:layout_marginLeft="-24dp"
+                android:layout_marginTop="5dp"
+                android:background="#E3E3E3" />
+
+            <TextView
+                android:id="@+id/ok_1"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即送出"
+                android:layout_below="@id/view_ok_1"
+                android:textColor="@color/balck"
+                android:layout_alignLeft="@id/tv_ok_uname"/>
+            <View
+                android:id="@+id/view_ok_2"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@id/et_ok_address"
+                android:layout_height="0.8dp"
+                android:layout_below="@id/ok_1"
+                android:layout_marginTop="5dp"
+                android:background="#E3E3E3" />
+
+            <TextView
+                android:id="@+id/ok_2"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付方式"
+                android:layout_below="@id/view_ok_2"
+                android:textColor="@color/balck"
+                android:layout_alignLeft="@id/tv_ok_uname"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:id="@+id/tv_ok_sendtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="约13:13送达"
+                android:layout_alignTop="@id/ok_1"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="@color/theme"
+                android:paddingRight="20dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_ok_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝"
+                android:layout_alignTop="@id/ok_2"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:textColor="@color/theme"
+                android:paddingRight="20dp"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout_9"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/RelativeLayout_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_ok_bname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="商家名称"
+                android:textColor="@color/balck"
+                android:textSize="13sp" />
+            <View
+                android:id="@+id/view_ok_3"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@id/tv_ok_bname"
+                android:layout_height="0.8dp"
+                android:layout_below="@id/tv_ok_bname"
+                android:layout_marginTop="5dp"
+                android:background="#E3E3E3" />
+
+            <com.example.bao.widget.OrderListView
+                android:id="@+id/lv_order_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_ok_3"
+                android:divider="#FFFFFF"
+                android:dividerHeight="5dp"
+                android:layout_marginTop="6dp">
+            </com.example.bao.widget.OrderListView>
+
+            <TextView
+                android:id="@+id/ok_3"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="餐盒费"
+                android:textSize="10sp"
+                android:textColor="#3C3C3C"
+                android:layout_below="@id/lv_order_ok"
+                android:layout_alignLeft="@id/tv_ok_bname"/>
+
+            <TextView
+                android:id="@+id/ok_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3C3C3C"
+                android:text="配送费 商家配送"
+                android:textSize="10sp"
+                android:layout_below="@id/ok_3"
+                android:layout_alignLeft="@id/ok_3"
+                android:layout_marginTop="5dp"/>
+
+            <View
+                android:id="@+id/view_ok_4"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@id/tv_ok_bname"
+                android:layout_height="0.8dp"
+                android:layout_below="@id/ok_4"
+                android:layout_marginTop="5dp"
+                android:background="#E3E3E3" />
+
+            <TextView
+                android:id="@+id/ok_5"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红包/抵用券"
+                android:layout_below="@id/view_ok_4"
+                android:textSize="10sp"
+               android:textColor="@color/balck"
+                android:layout_alignLeft="@+id/tv_ok_bname"
+                android:layout_marginBottom="10dp"/>
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_ok_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="￥12.8"
+                android:textColor="@color/balck"
+                android:layout_below="@id/view_ok_5"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小记"
+                android:textSize="12sp"
+                android:layout_toLeftOf="@id/tv_ok_price"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/balck"
+                android:layout_alignBottom="@id/tv_ok_price"/>
+
+            <View
+                android:id="@+id/view_ok_5"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@id/tv_ok_bname"
+                android:layout_height="0.8dp"
+                android:layout_below="@id/ok_5"
+                android:layout_marginTop="5dp"
+                android:background="#E3E3E3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_ok_pay_price"
+                    android:layout_width="90dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="价格"
+                    android:textColor="@color/theme"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_car_num"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:gravity="center"
+                    android:text="11"
+                    android:background="@drawable/icon_buy_count"
+                    android:textColor="#fff"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <Button android:id="@+id/btn_ok_pay"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="6dp"
+                android:background="@color/theme"
+                android:gravity="center"
+                android:text="确认支付"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

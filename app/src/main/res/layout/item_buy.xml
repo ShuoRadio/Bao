@@ -1,0 +1,125 @@
+<RelativeLayout
+    android:layout_height="100dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+    <ImageView android:id="@+id/iv_item_buylistt"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/shopimage"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_Menuname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@+id/iv_item_buylistt"
+        android:singleLine="true"
+        android:text="人气缤纷炸鸡套餐"
+        android:textSize="20sp"
+        android:textColor="@color/balck"/>
+    <TextView
+        android:id="@+id/tv_item_menuIntroduce"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@+id/iv_item_buylistt"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="两个翅根"
+        android:layout_below="@+id/tv_item_Menuname"/>
+    <LinearLayout
+        android:id="@+id/ll_item_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_item_buylistt"
+        android:layout_below="@+id/tv_item_menuIntroduce"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="月售"/>
+
+        <TextView
+            android:id="@+id/tv_buylist_mouthsale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:text="1777"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="好评率"/>
+
+        <TextView
+            android:id="@+id/tv_buylist_salerate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="100%"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_item_second"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@+id/iv_item_buylistt">
+
+
+        <TextView
+            android:id="@+id/tv_menu_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥19.9元"
+            android:textSize="17sp"
+            android:textColor="#ff00"
+            />
+
+        <ImageView
+            android:id="@+id/iv_menu_add"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_buy_add"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@id/tv_menu_price"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_menu_count"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/tv_menu_price"
+            android:layout_toLeftOf="@id/iv_menu_add"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="1"/>
+
+        <ImageView
+            android:id="@+id/iv_menu_reduce"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_buy_reduce"
+            android:layout_toLeftOf="@id/tv_menu_count"
+            android:layout_alignBottom="@id/tv_menu_price"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

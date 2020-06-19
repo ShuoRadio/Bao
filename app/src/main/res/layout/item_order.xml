@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tv_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/shopimage"/>
+
+    <TextView
+        android:id="@+id/tv_bname"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/tv_icon"
+        android:text="商家名称"
+        android:textColor="@color/balck"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_odate"
+        android:layout_alignLeft="@id/tv_bname"
+        android:layout_toRightOf="@id/tv_icon"
+        android:layout_below="@id/tv_bname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="订单日期"
+        android:layout_alignBottom="@id/tv_icon"
+        android:textSize="8sp"
+        android:textColor="#A2A2A2"/>
+
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.8sp"
+        android:layout_below="@id/tv_odate"
+        android:layout_alignLeft="@id/tv_mname"
+        android:background="#E3E3E3"
+        >
+    </View>
+
+    <TextView
+        android:id="@+id/tv_mname"
+        android:layout_marginTop="10dp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="菜单"
+        android:textSize="9sp"
+        android:layout_alignLeft="@id/tv_odate"
+        android:layout_below="@id/tv_odate"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#4D4D4D"/>
+
+    <TextView
+        android:id="@+id/tv_oprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:layout_toRightOf="@id/tv_mname"
+        android:textSize="12sp"
+        android:layout_alignBottom="@id/tv_mname"
+        android:textColor="@color/balck"/>
+
+
+    <Button
+        android:id="@+id/btn_orderagain"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/tv_oprice"
+        android:layout_alignLeft="@id/tv_oprice"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_button"
+        android:text="再来一单"
+        android:textColor="@color/theme"
+        android:textSize="9sp" />
+
+</RelativeLayout>

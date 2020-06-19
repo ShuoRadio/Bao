@@ -1,0 +1,137 @@
+<RelativeLayout
+    android:layout_height="85dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff">
+
+    <ImageView android:id="@+id/iv_item_shoplistt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/shopimage"
+        />
+
+    <TextView
+        android:id="@+id/tv_item_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@id/iv_item_shoplistt"
+        android:singleLine="true"
+        android:text="速得仕(知行路店)"
+        android:textSize="18sp"
+        android:textColor="@color/balck"/>
+    <LinearLayout
+        android:id="@+id/ll_item_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_item_shoplistt"
+        android:layout_below="@id/tv_item_shopname"
+        android:orientation="horizontal">
+
+        <RatingBar
+
+            android:id="@+id/rb_item_shopStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:rating="1.7"
+            android:progressTint="#FFC125"
+            />
+
+        <TextView
+            android:id="@+id/tv_shoplist_rankNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4.6"
+            android:paddingRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="月售"/>
+
+        <TextView
+            android:id="@+id/tv_shoplist_mouthsale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1777"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_item_third"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv_item_shoplistt"
+        android:layout_below="@id/ll_item_second"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_shoplist_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="起送￥"/>
+        <TextView
+            android:id="@+id/tv_shoplist_startmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:paddingRight="5dp"
+            android:layout_toRightOf="@id/tv_shoplist_1"
+            />
+
+        <TextView
+            android:id="@+id/tv_shoplist_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送￥"
+            android:layout_toRightOf="@id/tv_shoplist_startmoney"/>
+        <TextView
+            android:id="@+id/tv_shoplist_sendmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.5"
+            android:layout_toRightOf="@id/tv_shoplist_3"/>
+        <TextView
+            android:id="@+id/tv_shoplist_sendtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:layout_toLeftOf="@id/tv_shoplist_6"
+            />
+
+        <TextView
+            android:id="@+id/tv_shoplist_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分钟"
+            android:layout_toLeftOf="@id/tv_shoplist_sendmeter"
+            />
+        <TextView
+            android:id="@+id/tv_shoplist_sendmeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="768"
+            android:paddingLeft="5dp"
+            android:layout_toLeftOf="@id/tv_shoplist_8"
+            />
+        <TextView
+            android:id="@+id/tv_shoplist_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="千米"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

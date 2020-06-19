@@ -1,0 +1,205 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:descendantFocusability="beforeDescendants"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--
+让listView充满屏幕
+android:fillViewport="true"
+防止其自动跳转到listView的第一行
+android:focusableInTouchMode="true"
+android:focusable="true"
+android:descendantFocusability="beforeDescendants"
+-->
+
+
+<LinearLayout android:id="@+id/ll_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <com.youth.banner.Banner android:id="@+id/main_banner1"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:indicator_height="1.5dp"
+        app:indicator_width="15dp">
+
+
+    </com.youth.banner.Banner>
+    <LinearLayout
+        android:id="@+id/main_home_entrance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/main_home_entrance_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <com.example.bao.widget.IndicatorView
+            android:id="@+id/main_home_entrance_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="16dp"
+            app:gravity="0"
+            app:indicatorColor="#668b8989"
+            app:indicatorColorSelected="#FF5722"
+            android:layout_marginBottom="-10dp"
+            app:indicatorWidth="6"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp">
+        <LinearLayout
+            android:id="@+id/ll_top0"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <com.example.bao.widget.RoundAngleImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/left"
+                />
+            <com.example.bao.widget.RoundAngleImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"
+                />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/ll_top0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top0"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠专区"
+                android:textSize="20sp"
+                android:textColor="@color/balck"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="270dp"
+                android:src="@drawable/yhzq" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/tv_top1"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top0.1"
+            android:text="店铺推荐"
+            android:textSize="20sp"
+            android:textColor="@color/balck"
+            />
+        <LinearLayout android:id="@+id/ll_top2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_top1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="综合排序："/>
+            <Button android:id="@+id/btn_sort_jl"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:background="#00000000"
+                android:text="距离"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:width="0dp"/>
+
+            <Button android:id="@+id/btn_sort_pj"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:background="#00000000"
+                android:text="评价"
+                android:width="0dp"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:background="#00000000"
+                android:text="筛选"
+                android:width="0dp"
+                android:layout_marginLeft="132dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_top3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/ll_top2">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#E5E5E5"
+                android:text="双12品质联盟"
+                android:layout_marginRight="5dp"
+                android:textSize="10dp"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#E5E5E5"
+                android:textSize="10dp"
+                android:layout_marginRight="5dp"
+                android:text="津贴联盟"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#E5E5E5"
+                android:textSize="10dp"
+                android:layout_marginRight="5dp"
+                android:text="会员领红包"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#E5E5E5"
+                android:textSize="10dp"
+                android:text="满减优惠"/>
+
+
+
+        </LinearLayout>
+
+
+   </RelativeLayout>
+
+    <com.example.bao.widget.MyListView
+        android:id="@+id/lv_main_shopListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.example.bao.widget.MyListView>
+
+</LinearLayout>
+</ScrollView>
